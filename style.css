@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Create Parcel | ParcelPoint</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+  <nav class="bg-white shadow p-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold text-blue-700">ParcelPoint Admin</h1>
+    <div class="space-x-4 text-sm">
+      <a href="dashboard.html" class="hover:underline text-blue-600">Dashboard</a>
+      <a href="create.html" class="text-blue-700 font-semibold">New Parcel</a>
+      <a href="messages.html" class="hover:underline text-blue-600">Messages</a>
+    </div>
+  </nav>
+
+  <div class="p-6 max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold text-blue-800 mb-6">➕ Create New Parcel</h2>
+    <form class="space-y-4 bg-white p-6 rounded-lg shadow-md">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <input type="text" placeholder="Tracking Number" class="p-3 border rounded w-full" required />
+        <select class="p-3 border rounded w-full">
+          <option>Status: In Transit</option>
+          <option>Status: Delivered</option>
+          <option>Status: On Hold</option>
+        </select>
+      </div>
+
+      <h3 class="text-xl font-semibold text-gray-800 mt-4">Sender Info</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <input type="text" placeholder="Sender Full Name" class="p-3 border rounded w-full" />
+        <input type="email" placeholder="Sender Email" class="p-3 border rounded w-full" />
+        <input type="text" placeholder="Sender Phone" class="p-3 border rounded w-full" />
+        <input type="text" placeholder="Sender Address" class="p-3 border rounded w-full" />
+      </div>
+
+      <h3 class="text-xl font-semibold text-gray-800 mt-4">Receiver Info</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <input type="text" placeholder="Receiver Full Name" class="p-3 border rounded w-full" />
+        <input type="email" placeholder="Receiver Email" class="p-3 border rounded w-full" />
+        <input type="text" placeholder="Receiver Phone" class="p-3 border rounded w-full" />
+        <input type="text" placeholder="Receiver Address" class="p-3 border rounded w-full" />
+      </div>
+
+      <button type="submit" class="bg-blue-700 text-white px-6 py-3 mt-4 rounded-lg hover:bg-blue-800 transition">Save Parcel</button>
+    </form>
+  </div>
+</body>
+</html>
